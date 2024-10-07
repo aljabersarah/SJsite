@@ -1,24 +1,14 @@
 {
   "main": [
     {
-      "name": "facebook",
-      "icon": "fab fa-facebook",
-      "link": "https://www.facebook.com/"
-    },
-    {
       "name": "twitter",
       "icon": "fab fa-twitter",
-      "link": "https://twitter.com/"
-    },
-    {
-      "name": "github",
-      "icon": "fab fa-github",
-      "link": "https://www.github.com/"
+      "link": "https://x.com/s4o_o"
     },
     {
       "name": "linkedin",
       "icon": "fab fa-linkedin",
-      "link": "https://www.linkedin.com/"
+      "link": "www.linkedin.com/in/sarah-aljaber-195b3717a"
     }
   ]
 }
