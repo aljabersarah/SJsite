@@ -7,7 +7,6 @@
   "scripts": {
     "dev": "hugo server",
     "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
-    "build-css": "postcss css/style.css -o css/style-out.css"
     "preview": "hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",
     "dev:example": "cd exampleSite && hugo server",
     "build:example": "cd exampleSite && hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
@@ -23,8 +22,8 @@
     "@tailwindcss/forms": "^0.5.9",
     "@tailwindcss/typography": "^0.5.15",
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.14",
-    "postcss-cli": "^9.1.0",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
     "prettier": "^3.3.3",
     "prettier-plugin-go-template": "0.0.15",
     "prettier-plugin-tailwindcss": "^0.6.8",
