@@ -54,7 +54,7 @@ show_categories = true
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
 keywords = ["Boilerplate", "Hugo"]
-description = "Sarah AlJaber Site"
+description = "Sarah AlJaber Site, your trusted source for cybersecurity insights. Explore insightful blog posts, detailed writeups, and essential tools crafted with care to enhance our cyber skill"
 author = "Sarah AlJaber"
 twitter = "s4o_o"
 image = "images/og-image.png"
