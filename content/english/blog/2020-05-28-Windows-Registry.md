@@ -2,6 +2,7 @@
 layout: post
 title: Windows Registry (سجل النظام)
 ---
+<div dir="rtl">
 
 ![](https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/RegEdit.png)
 
@@ -188,3 +189,4 @@ CurrentVersion\Explorer\RecentDocs`
 جميع الحقوق محفوظة 
 
 سارة آل جابر 
+</div>
