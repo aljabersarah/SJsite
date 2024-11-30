@@ -1,6 +1,8 @@
 --- 
 layout: post
 title: Windows Registry (سجل النظام)
+image: https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/RegEdit.png
+
 ---
 <div dir="rtl">
 
