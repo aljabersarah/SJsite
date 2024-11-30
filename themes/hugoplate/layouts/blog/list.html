@@ -9,22 +9,42 @@
             {{ $paginator:= .Paginate .RegularPages }}
             {{ range $paginator.Pages }}
               <div class="mb-14">
-                <div class="bg-body dark:bg-darkmode-body">
-                  <h4 class="mb-3">
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
-                  </h4>
-                  
-                  {{ $description := .Summary }}
-                  {{ $descriptionLines := split $description "\n" }}
-                  {{ if gt (len $descriptionLines) 1 }}
-                    <p class="mb-6">
-                      {{ delimit (slice (after 1 $descriptionLines)) "\n" | truncate 100 }}
-                    </p>
-                  {{ else }}
-                    <p class="mb-6">{{ $description | truncate 100 }}</p>
+                <div class="bg-body dark:bg-darkmode-body rounded-lg overflow-hidden shadow-md">
+                  <!-- Article Image -->
+                  {{ if .Params.image }}
+                    <img 
+                      src="{{ .Params.image }}" 
+                      alt="{{ .Title }}" 
+                      class="w-full h-48 object-cover"
+                    >
                   {{ end }}
                   
-                  <a class="btn btn-outline-primary btn-sm" href="{{ .Permalink }}">Read More</a>
+                  <div class="p-4">
+                    <h4 class="mb-3">
+                      <a href="{{ .Permalink }}" class="hover:text-primary">
+                        {{ .Title }}
+                      </a>
+                    </h4>
+                    
+                    {{ $description := .Summary }}
+                    {{ $descriptionLines := split $description "\n" }}
+                    {{ if gt (len $descriptionLines) 1 }}
+                      <p class="mb-6 text-sm text-gray-600">
+                        {{ delimit (slice (after 1 $descriptionLines)) "\n" | truncate 100 }}
+                      </p>
+                    {{ else }}
+                      <p class="mb-6 text-sm text-gray-600">
+                        {{ $description | truncate 100 }}
+                      </p>
+                    {{ end }}
+                    
+                    <a 
+                      class="btn btn-outline-primary btn-sm" 
+                      href="{{ .Permalink }}"
+                    >
+                      Read More
+                    </a>
+                  </div>
                 </div>
               </div>
             {{ end }}
