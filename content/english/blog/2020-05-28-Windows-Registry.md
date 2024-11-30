@@ -4,8 +4,7 @@ title: Windows Registry (سجل النظام)
 ---
 <div dir="rtl">
 
-![](https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/RegEdit.png)
-
+<img src="https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/RegEdit.png" alt="Windows Registry Icon" class="w-full mb-4">
 أهلا بكم في هذه المقالة سوف نتحدث عن Windows Registry (سجل النظام). 
 
 
