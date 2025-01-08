@@ -125,78 +125,7 @@
   {{ end }}
   <!-- /Features -->
 
-  <!-- Latest Blog Posts -->
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="md:col-10 lg:col-8 xl:col-6 mx-auto mb-12 text-center">
-          <h2 class="mb-4">Latest Posts</h2>
-          <p>Check out our most recent blog posts and updates</p>
-        </div>
-      </div>
-      
-      <!-- Featured Latest Post -->
-      {{ $pages := where .Site.RegularPages "Type" "blog" }}
-      {{ $latestPost := index $pages 0 }}
-      {{ with $latestPost }}
-      <div class="row mb-12">
-        <div class="col-12">
-          <a href="{{ .RelPermalink }}" class="block bg-theme-light dark:bg-darkmode-theme-light rounded-lg p-8 transition hover:shadow-lg">
-            <h3 class="h4 mb-3">{{ .Title }}</h3>
-            <p class="text-text mb-4">{{ .Date.Format "January 2, 2006" }}</p>
-            <div class="prose dark:prose-darkmode">
-              {{ .Summary }}
-            </div>
-            <span class="btn btn-primary mt-4 inline-flex items-center">
-              Read More
-              <i class="fa fa-arrow-right pl-2"></i>
-            </span>
-          </a>
-        </div>
-      </div>
-      {{ end }}
-
-      <!-- Other Posts Grid -->
-      <div class="row">
-        {{ $paginator := .Paginate (after 1 $pages) 6 }}
-        {{ range $paginator.Pages }}
-        <div class="md:col-6 lg:col-4 mb-8">
-          <a href="{{ .RelPermalink }}" class="block bg-theme-light dark:bg-darkmode-theme-light rounded-lg p-6 transition hover:shadow-lg h-full">
-            <h4 class="h5 mb-3">{{ .Title }}</h4>
-            <p class="text-text mb-3">{{ .Date.Format "January 2, 2006" }}</p>
-            <div class="prose dark:prose-darkmode line-clamp-3">
-              {{ .Summary }}
-            </div>
-            <span class="btn btn-primary btn-sm mt-4 inline-flex items-center">
-              Read More
-              <i class="fa fa-arrow-right pl-2"></i>
-            </span>
-          </a>
-        </div>
-        {{ end }}
-      </div>
-
-      <!-- Pagination -->
-      {{ if gt $paginator.TotalPages 1 }}
-      <div class="mt-12 flex justify-center items-center space-x-6">
-        {{ if $paginator.HasPrev }}
-        <a href="{{ $paginator.Prev.URL }}" class="btn btn-outline-primary">
-          <i class="fa fa-arrow-left pr-2"></i>
-          Previous
-        </a>
-        {{ end }}
-        <span class="text-text">Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
-        {{ if $paginator.HasNext }}
-        <a href="{{ $paginator.Next.URL }}" class="btn btn-outline-primary">
-          Next
-          <i class="fa fa-arrow-right pl-2"></i>
-        </a>
-        {{ end }}
-      </div>
-      {{ end }}
-    </div>
-  </section>
-  <!-- /Latest Blog Posts -->
+ 
 
   <!-- Testimonials -->
   {{ with site.GetPage "sections/testimonial" }}
