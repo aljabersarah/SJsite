@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Threat Haven Lab Part1 
-image: https://ibb.co/CWTQHs6
+image: https://www.imghippo.com/i/zgCM4524g.png 
 
 ---
 # Welcome to Threat Haven Lab: Building Your Ultimate Cybersecurity Environment (Part 1)
@@ -45,7 +45,7 @@ I'm a big fan of open-source tools, so we'll be using:
 * Atomic Red Team for adversary emulation
 ### Initial Network Design
 ## Topology 
-![](https://ibb.co/gVwYwPn)
+![]([https://ibb.co/gVwYwPn](https://www.imghippo.com/i/ZzAW3959E.png)
 
 ## Lab Requirements and Prerequisites
 
